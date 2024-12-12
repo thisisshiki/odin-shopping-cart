@@ -18,9 +18,9 @@ function App() {
             <Navbar />
             <main>
               <Routes>
-                <Route path="/home" element={<Home />} />
-                <Route path="/shop" element={<Shop />} />
-                <Route path="/cart" element={<Cart />} />
+                <Route path="/odin-shopping-cart/home" element={<Home />} />
+                <Route path="/odin-shopping-cart/shop" element={<Shop />} />
+                <Route path="/odin-shopping-cart/cart" element={<Cart />} />
               </Routes>
             </main>
           </div>

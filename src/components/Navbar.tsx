@@ -12,14 +12,14 @@ export const Navbar: React.FC = () => {
         <div className="flex justify-between h-16">
           <div className="flex space-x-8">
             <Link
-              to="/home"
+              to="/odin-shopping-cart/home"
               className="flex items-center hover:text-blue-600 transition-colors"
             >
               <Home className="w-5 h-5 mr-1" />
               <span>Home</span>
             </Link>
             <Link
-              to="/shop"
+              to="/odin-shopping-cart/shop"
               className="flex items-center hover:text-blue-600 transition-colors"
             >
               <Store className="w-5 h-5 mr-1" />
@@ -27,7 +27,7 @@ export const Navbar: React.FC = () => {
             </Link>
           </div>
           <Link
-            to="/cart"
+            to="/odin-shopping-cart/cart"
             className="flex items-center hover:text-blue-600 transition-colors"
           >
             <div className="relative">
