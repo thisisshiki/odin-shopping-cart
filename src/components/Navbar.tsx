@@ -12,7 +12,7 @@ export const Navbar: React.FC = () => {
         <div className="flex justify-between h-16">
           <div className="flex space-x-8">
             <Link
-              to="/"
+              to="/home"
               className="flex items-center hover:text-blue-600 transition-colors"
             >
               <Home className="w-5 h-5 mr-1" />
