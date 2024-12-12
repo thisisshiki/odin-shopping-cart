@@ -1,5 +1,4 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { CartProvider } from './context/CartContext';
 import { Navbar } from './components/Navbar';
@@ -18,6 +17,7 @@ function App() {
             <Navbar />
             <main>
               <Routes>
+              <Route path="/odin-shopping-cart" element={<Navigate to="/odin-shopping-cart/home" />} />
                 <Route path="/odin-shopping-cart/home" element={<Home />} />
                 <Route path="/odin-shopping-cart/shop" element={<Shop />} />
                 <Route path="/odin-shopping-cart/cart" element={<Cart />} />
